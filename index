@@ -1,0 +1,94 @@
+import React from 'react';
+import { AlertCircle, Zap, Globe, BookOpen, Video, MessageCircle } from 'lucide-react';
+
+const NewsletterWebsite = () => {
+  return (
+    <div className="font-['Inter',_sans-serif] bg-gradient-to-br from-purple-600 via-pink-500 to-red-500 min-h-screen text-white overflow-x-hidden">
+      <header className="bg-black bg-opacity-30 py-4 fixed w-full top-0 z-10">
+        <div className="container mx-auto px-4 flex justify-between items-center">
+          <h1 className="text-3xl font-extrabold">Sci<span className="text-yellow-300">Spark</span></h1>
+          <nav>
+            <a href="#features" className="mx-2 hover:text-yellow-300 transition-colors">Features</a>
+            <a href="#about" className="mx-2 hover:text-yellow-300 transition-colors">About Us</a>
+            <a href="#signup" className="mx-2 hover:text-yellow-300 transition-colors">Sign Up</a>
+          </nav>
+        </div>
+      </header>
+
+      <main className="container mx-auto px-4 pt-24">
+        <section className="text-center py-16 min-h-screen flex flex-col justify-center">
+          <h2 className="text-6xl font-extrabold mb-6 animate-pulse">Ignite Your Curiosity!</h2>
+          <p className="text-xl mb-4 max-w-3xl mx-auto">Dive into mind-blowing scientific discoveries, explained with a spark of excitement! 🚀</p>
+          <p className="text-lg mb-8 max-w-3xl mx-auto italic">
+            We transform complex scientific research into exciting, accessible content for curious minds. 
+            Think of us as your science-savvy friend, breaking down the big stuff with wit, charm, and a touch of sarcasm, but with all the accuracy intact.
+          </p>
+          <a href="#signup" className="bg-yellow-300 text-purple-700 font-bold py-3 px-8 rounded-full text-lg transition duration-300 hover:bg-white hover:text-purple-600 transform hover:scale-105">
+            Join the Adventure!
+          </a>
+        </section>
+
+        <section id="features" className="mb-20">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white bg-opacity-20 p-6 rounded-xl backdrop-blur-sm hover:bg-opacity-30 transition-all transform hover:scale-105">
+              <AlertCircle className="w-16 h-16 text-yellow-300 mb-4" />
+              <h3 className="text-2xl font-bold mb-3">Mind-Bending Insights</h3>
+              <p>Unravel the mysteries of the universe, one quirk at a time! Think of it like binge-watching your favorite sci-fi series - but with facts that are even more fantastic.</p>
+            </div>
+            <div className="bg-white bg-opacity-20 p-6 rounded-xl backdrop-blur-sm hover:bg-opacity-30 transition-all transform hover:scale-105">
+              <Zap className="w-16 h-16 text-yellow-300 mb-4" />
+              <h3 className="text-2xl font-bold mb-3">Electrifying Discoveries</h3>
+              <p>Stay ahead of the curve with the latest scientific breakthroughs! It's like having a backstage pass to the greatest show in the universe.</p>
+            </div>
+            <div className="bg-white bg-opacity-20 p-6 rounded-xl backdrop-blur-sm hover:bg-opacity-30 transition-all transform hover:scale-105">
+              <Globe className="w-16 h-16 text-yellow-300 mb-4" />
+              <h3 className="text-2xl font-bold mb-3">Global Science Odyssey</h3>
+              <p>Embark on a journey through diverse scientific fields and cultures! From quantum quarks to cosmic wonders, our content is the ultimate travel guide for your brain.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" className="mb-20 bg-black bg-opacity-30 p-8 rounded-2xl backdrop-blur-md">
+          <h2 className="text-4xl font-bold mb-6 text-center">What We Do at SciSpark</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <BookOpen className="w-12 h-12 text-yellow-300 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Weekly Newsletters</h3>
+              <p>Receive captivating summaries of groundbreaking studies right in your inbox. No more endless scrolling to find out what's new in the world of science – we've got you covered.</p>
+            </div>
+            <div className="text-center">
+              <Video className="w-12 h-12 text-yellow-300 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Engaging Visuals</h3>
+              <p>Complex concepts explained through stunning infographics and animations. Because sometimes a picture is worth a thousand equations.</p>
+            </div>
+            <div className="text-center">
+              <MessageCircle className="w-12 h-12 text-yellow-300 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Expert Insights</h3>
+              <p>Exclusive interviews and Q&A sessions with leading scientists. Get to know the geniuses behind the lab coats – spoiler alert: they're awesome.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="signup" className="bg-black bg-opacity-50 p-8 rounded-2xl backdrop-blur-md max-w-md mx-auto mb-20">
+          <h3 className="text-3xl font-bold mb-6 text-center">Join the SciSpark Revolution!</h3>
+          <p className="text-center mb-6">Step into a world where science meets fun, and curiosity reigns supreme. Sign up now and become part of a community that's passionate about exploring the wonders of the universe.</p>
+          <form className="space-y-4">
+            <input type="text" placeholder="Your Awesome Name" className="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-300" required />
+            <input type="email" placeholder="Your Cosmic Email" className="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-300" required />
+            <button type="submit" className="w-full bg-yellow-300 text-purple-700 font-bold py-3 px-4 rounded-lg transition duration-300 hover:bg-white hover:text-purple-600 transform hover:scale-105">
+              Blast Off into Knowledge!
+            </button>
+          </form>
+        </section>
+      </main>
+
+      <footer className="bg-black bg-opacity-30 py-6">
+        <div className="container mx-auto px-4 text-center">
+          <p>&copy; 2024 SciSpark. Igniting minds across the galaxy! 🌌</p>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default NewsletterWebsite;
