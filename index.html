@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SciSpark - Ignite Your Curiosity!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            color: white;
+            background: linear-gradient(to bottom right, #9333ea, #ec4899, #ef4444);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        main {
+            padding-top: 80px;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+            min-height: calc(100vh - 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #fde047;
+            color: #6d28d9;
+            padding: 12px 24px;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: white;
+            transform: scale(1.05);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        .feature {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 1rem;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+        .feature:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+        .about {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 4rem 2rem;
+            border-radius: 1rem;
+            margin-bottom: 4rem;
+        }
+        .signup {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 2rem;
+            border-radius: 1rem;
+            max-width: 500px;
+            margin: 0 auto 4rem;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #fde047;
+            color: #6d28d9;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.3);
+            text-align: center;
+            padding: 1rem 0;
+        }
+        @media (max-width: 768px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h1>Sci<span style="color: #fde047;">Spark</span></h1>
+            <div>
+                <a href="#features">Features</a>
+                <a href="#about">About Us</a>
+                <a href="#signup">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Ignite Your Curiosity!</h2>
+            <p>Dive into mind-blowing scientific discoveries, explained with a spark of excitement! 🚀</p>
+            <p><em>We transform complex scientific research into exciting, accessible content for curious minds. 
+            Think of us as your science-savvy friend, breaking down the big stuff with wit, charm, and a touch of sarcasm, but with all the accuracy intact.</em></p>
+            <a href="#signup" class="cta-button">Join the Adventure!</a>
+        </section>
+
+        <section id="features" class="features">
+            <div class="feature">
+                <h3>Mind-Bending Insights</h3>
+                <p>Unravel the mysteries of the universe, one quirk at a time! Think of it like binge-watching your favorite sci-fi series - but with facts that are even more fantastic.</p>
+            </div>
+            <div class="feature">
+                <h3>Electrifying Discoveries</h3>
+                <p>Stay ahead of the curve with the latest scientific breakthroughs! It's like having a backstage pass to the greatest show in the universe.</p>
+            </div>
+            <div class="feature">
+                <h3>Global Science Odyssey</h3>
+                <p>Embark on a journey through diverse scientific fields and cultures! From quantum quarks to cosmic wonders, our content is the ultimate travel guide for your brain.</p>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>What We Do at SciSpark</h2>
+            <div class="features">
+                <div>
+                    <h3>Weekly Newsletters</h3>
+                    <p>Receive captivating summaries of groundbreaking studies right in your inbox. No more endless scrolling to find out what's new in the world of science – we've got you covered.</p>
+                </div>
+                <div>
+                    <h3>Engaging Visuals</h3>
+                    <p>Complex concepts explained through stunning infographics and animations. Because sometimes a picture is worth a thousand equations.</p>
+                </div>
+                <div>
+                    <h3>Expert Insights</h3>
+                    <p>Exclusive interviews and Q&A sessions with leading scientists. Get to know the geniuses behind the lab coats – spoiler alert: they're awesome.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="signup" class="signup">
+            <h2>Join the SciSpark Revolution!</h2>
+            <p>Step into a world where science meets fun, and curiosity reigns supreme. Sign up now and become part of a community that's passionate about exploring the wonders of the universe.</p>
+            <form id="signupForm">
+                <input type="text" placeholder="Your Awesome Name" required>
+                <input type="email" placeholder="Your Cosmic Email" required>
+                <button type="submit">Blast Off into Knowledge!</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SciSpark. Igniting minds across the galaxy! 🌌</p>
+    </footer>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thanks for signing up! Get ready for an exciting journey through the cosmos of knowledge!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
